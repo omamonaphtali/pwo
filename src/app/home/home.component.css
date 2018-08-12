@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 18%;
+}
+.banner_text, .below_banner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+.below_banner div {
+  justify-content: center;
+}
+  

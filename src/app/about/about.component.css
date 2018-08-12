@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    margin: 20px 30px;
+}
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: purple;
+    height: 50px;
+    width: 100%;
+}
+.footer p {
+    display: flex;
+}
