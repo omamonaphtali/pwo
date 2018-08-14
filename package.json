@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build -prod --aot",
+    "postinstall": "ng build --aot --prod",
     "start": "node server.js"
   },
   "engines": {
@@ -17,6 +17,7 @@
     },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "~0.7.0",
     "@angular/animations": "^6.1.0",
     "@angular/cdk": "^6.4.3",
     "@angular/cli": "~6.1.3",
@@ -36,6 +37,7 @@
     "hammerjs": "^2.0.8",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.2.2",
+    "typescript": "~2.7.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
