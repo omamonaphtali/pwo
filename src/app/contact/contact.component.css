@@ -1,16 +1,21 @@
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 73vh;
+.divs-2 {
   background-color: white;
 }
 .container div:first-child {
   padding: 20px;
 }
 iframe {
-  width: 90%;
+  margin: auto;
+  width: 100%;
   height: auto;
-  min-height: 68vh;
+}
+@media screen and (min-width: 577px) {
+  .divs-2{
+    min-height: 73vh;    
+  }
+  iframe {
+    width: 90%;
+    height: auto;
+    min-height: 73vh;
+  }
 }

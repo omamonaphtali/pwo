@@ -1,4 +1,4 @@
-.container {
+.row {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
@@ -8,13 +8,26 @@
   overflow: scroll;
   padding-top: 10px;
 }
-.img {
+/* .img {
   width: 100%;
   margin-bottom: 18%;
-}
+} */
 .card-picture {
   flex-basis: auto;
-  width: 20%;
-  margin-left: 1%;
-  margin-bottom: 2%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+@media screen and (min-width: 577px) {
+  .card-picture {
+    width: 49%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .card-picture {
+    width: 24%;
+    margin: auto;
+  }
 }

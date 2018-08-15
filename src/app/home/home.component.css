@@ -1,9 +1,4 @@
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
+
 /*================================
             BANNER
 ==================================*/
@@ -17,19 +12,21 @@
   margin-bottom: 18%;
 }
 .banner_text, .below_banner {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: baseline;
+  padding: auto;
 }
-.below_banner div {
-  justify-content: center;
+
+
+@media screen and (min-width: 577px) {
+  .below_banner div {
+    width: 45%;
+    margin: 10px 2.5%;
+  }
 }
+
 /*=================================
           WORK
 ===================================*/
 .work {
-  max-width: 100%;
   margin: 2%;
   overflow: hidden;
   text-align: center;
@@ -42,17 +39,6 @@
 .work-area div:last-child {
   background-color: #ffffff;
 }
-.order-2 div:last-child {
-  order: 1;
-}
-.order-2 div:first-child {
-  order: 2;
-}
-.work-area div {
-  width: 49%;
-  margin: auto;
-  padding: 2%;
-}
 .work-area img {
   width: 100%;
   height: auto;
@@ -60,4 +46,14 @@
 .work-area p {
   background-color: #ffffff;
   padding: 5%;
+}
+
+
+@media screen and (min-width: 577px) {
+  .order-2 div:last-child {
+    order: 1;
+  }
+  .order-2 div:first-child {
+    order: 2;
+  }
 }
