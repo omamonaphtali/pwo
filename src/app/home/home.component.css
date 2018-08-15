@@ -3,16 +3,20 @@
             BANNER
 ==================================*/
 .banner {
+  display: flex;
+  flex-direction: row;
   background-color: #ffffff;
 }
-.img {
-  width: 100%;
+/* .img-responsive {
   max-width: 300px;
   max-height: 300px;
   margin-bottom: 18%;
-}
-.banner_text, .below_banner {
+} */
+.banner_text,
+.below_banner {
   padding: auto;
+  margin: auto;
+  text-align: center;
 }
 
 
@@ -20,6 +24,25 @@
   .below_banner div {
     width: 45%;
     margin: 10px 2.5%;
+  }
+  .banner div:first-child {
+    width: 33%;
+  }
+  .banner div:last-child {
+    width: 67%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+  .below_banner div{
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -34,6 +57,7 @@
 .work-area {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: auto;
 }
 .work-area div:last-child {
@@ -46,6 +70,7 @@
 .work-area p {
   background-color: #ffffff;
   padding: 5%;
+  text-align: left;
 }
 
 

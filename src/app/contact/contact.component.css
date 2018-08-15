@@ -1,7 +1,7 @@
 .divs-2 {
   background-color: white;
 }
-.container div:first-child {
+.row div:first-child {
   padding: 20px;
 }
 iframe {
@@ -10,6 +10,12 @@ iframe {
   height: auto;
 }
 @media screen and (min-width: 577px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center
+  }
   .divs-2{
     min-height: 73vh;    
   }
