@@ -10,6 +10,10 @@ import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { GalleryAllComponent } from './gallery-all/gallery-all.component';
+import { GalleryMentorshipComponent } from './gallery-mentorship/gallery-mentorship.component';
+import { GalleryKianyagaComponent } from './gallery-kianyaga/gallery-kianyaga.component';
+import { GalleryPeaceDinnerComponent } from './gallery-peace-dinner/gallery-peace-dinner.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,10 @@ import { ContactComponent } from './contact/contact.component';
     GalleryComponent,
     AboutComponent,
     ContactComponent,
+    GalleryAllComponent,
+    GalleryMentorshipComponent,
+    GalleryKianyagaComponent,
+    GalleryPeaceDinnerComponent,
   ],
   imports: [
     BrowserModule,
