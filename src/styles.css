@@ -16,6 +16,19 @@ body {
   width: 100%;
   height: 10px;
 }
+.secondary-nav .nav-link {
+    margin: 10px 5px;
+    padding: 5px;
+    border: 2px blue solid;
+    border-radius: 5px;
+    color: blue;
+    font-weight: bold;
+}
+.secondary-nav .nav-link:hover,
+.secondary-nav .nav-link:active {
+    background-color: blue;
+    color: white;
+}
 
 @media screen and (min-width: 577px) {
   .divs-2 {

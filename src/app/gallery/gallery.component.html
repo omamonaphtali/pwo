@@ -1,12 +1,17 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="collapse navbar-collapse show">
-    <div class="navbar-nav right">
-      <a class="nav-item nav-link" routerLinkActive="active" routerLink="/gallery">All</a>
-      <a class="nav-item nav-link" routerLinkActive="active" routerLink="/gallery/mentorship">Girls' Mentorship</a>
-      <a class="nav-item nav-link" routerLinkActive="active" routerLink="/gallery/kianyaga">Kianyaga Children's Home</a>
-      <a class="nav-item nav-link" routerLinkActive="active" routerLink="/gallery/peace-dinner">Peace Dinner</a>
-    </div>
+<div class="container">
+  <div class="row">
+    <nav class="nav flex-row secondary-nav">
+      <a class="nav-link"routerLinkActive="active" routerLink="/gallery">All</a>
+      <a class="nav-link" routerLinkActive="active" routerLink="/gallery/mentorship">Girls' Mentorship</a>
+      <a class="nav-link" routerLinkActive="active" routerLink="/gallery/kianyaga">Kianyaga Children's Home</a>
+      <a class="nav-link" routerLinkActive="active" routerLink="/gallery/peace-dinner">Peace Dinner</a>
+    </nav>
   </div>
-</nav>
+    
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
-  <router-outlet></router-outlet>
+
+
