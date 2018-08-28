@@ -2,6 +2,7 @@
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
+  justify-content: center;
   flex: 3 0 24%;
   min-height: 100%;
   width: 100%;

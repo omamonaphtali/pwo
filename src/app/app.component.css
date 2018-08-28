@@ -1,7 +1,10 @@
 .main-container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
   background-color: whitesmoke;
+  width: 96vw !important;
   min-height: 90vh;
 }
 
@@ -17,6 +20,14 @@
   background-color: purple;
   color: white;
   min-width: 100%;
+}
+.footer a {
+  color: rgb(21, 203, 248);
+}
+.footer a:hover {
+  color: rgb(21, 203, 248);
+  font-weight: 600;
+  text-decoration: none;
 }
 .social {
   display: flex;
