@@ -1,0 +1,46 @@
+*div {
+  width: 100%;
+  overflow-y: hidden;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  flex: 3 0 24%;
+  min-height: 100%;
+  width: 100%;
+  overflow: auto !important;
+  padding-top: 10px;
+  -ms-overflow-style: none;
+  /* -webkit-overflow-scrolling: auto; */
+}
+.row::-webkit-scrollbar { 
+  width: 0 !important;
+}
+.rotate90 {
+  transform: rotate(90deg);
+}
+.rotate180 {
+  transform: rotate(180deg);
+}
+.card-picture {
+  flex-basis: auto;
+  margin: auto;
+  margin-top: 2%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 577px) {
+  .card-picture {
+    width: 49%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .card-picture {
+    width: 24%;
+    margin: auto;
+  }
+}

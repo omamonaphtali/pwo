@@ -6,13 +6,15 @@ import { GalleryAllComponent } from './gallery-all/gallery-all.component';
 import { GalleryMentorshipComponent } from './gallery-mentorship/gallery-mentorship.component';
 import { GalleryKianyagaComponent } from './gallery-kianyaga/gallery-kianyaga.component';
 import { GalleryPeaceDinnerComponent } from './gallery-peace-dinner/gallery-peace-dinner.component';
+import { ChebilatTownComponent } from './chebilat-town/chebilat-town.component';
 
 const galleryRoutes: Routes = [
   {path: 'gallery', component: GalleryComponent,
   children: [
     {path: 'all', component: GalleryAllComponent},
-    {path: 'mentorship', component: GalleryMentorshipComponent},
+    {path: 'chebilat', component: ChebilatTownComponent},
     {path: 'kianyaga', component: GalleryKianyagaComponent},
+    {path: 'mentorship', component: GalleryMentorshipComponent},
     {path: 'peace-dinner', component: GalleryPeaceDinnerComponent},
     {path: '', redirectTo: 'all', pathMatch: 'full'},
   ]},

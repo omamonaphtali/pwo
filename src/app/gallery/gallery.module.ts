@@ -8,6 +8,7 @@ import { GalleryAllComponent } from './gallery-all/gallery-all.component';
 import { GalleryMentorshipComponent } from './gallery-mentorship/gallery-mentorship.component';
 import { GalleryKianyagaComponent } from './gallery-kianyaga/gallery-kianyaga.component';
 import { GalleryPeaceDinnerComponent } from './gallery-peace-dinner/gallery-peace-dinner.component';
+import { ChebilatTownComponent } from './chebilat-town/chebilat-town.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { GalleryPeaceDinnerComponent } from './gallery-peace-dinner/gallery-peac
     GalleryMentorshipComponent,
     GalleryKianyagaComponent,
     GalleryPeaceDinnerComponent,
+    ChebilatTownComponent
   ],
   imports: [
     CommonModule,
