@@ -23,6 +23,22 @@
   margin: auto;
   text-align: center;
 }
+#updates {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+#updates div div:first-child, #updates h5 {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: center;
+}
+#updates ol {
+  /* color: rgb(21, 203, 248);
+  font-size: 1.75rem;
+  font-weight: 600; */
+  list-style-type: none;
+}
 
 
 @media only screen and (min-width: 577px) {
@@ -35,6 +51,11 @@
   }
   .banner div:last-child {
     width: 45%;
+  }
+  #updates div div:first-child, #updates h5 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
