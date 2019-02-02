@@ -13,6 +13,13 @@
              FOOTER
 =================================
 */
+.friend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+}
 .footer {
   flex-direction: column;
   align-self: flex-end;

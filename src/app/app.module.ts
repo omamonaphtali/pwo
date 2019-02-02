@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { FriendComponent } from './shared/friend/friend.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
     ContactComponent,
     PageNotFoundComponent,
     DropdownDirective,
+    FriendComponent,
   ],
   imports: [
     BrowserModule,

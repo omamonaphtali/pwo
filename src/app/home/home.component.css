@@ -88,6 +88,7 @@
 }
 .work-area div:last-child {
   background-color: #ffffff;
+  box-shadow: rgb(21, 203, 248) 0 0 1px;
 }
 .work-area img {
   width: 100%;
@@ -101,6 +102,11 @@
 
 
 @media screen and (min-width: 577px) {
+  .divs-2 {
+    width: 48%;
+    margin: 5px 1%;
+    padding: 2%;
+  }
   .order-2 div:last-child {
     order: 1;
   }
