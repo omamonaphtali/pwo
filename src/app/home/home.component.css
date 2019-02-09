@@ -27,6 +27,10 @@
   background-color: #ffffff;
   padding: 40px 20px;
 }
+#updates h5 {
+  color: rgb(21, 203, 248);
+  font-weight: 550;
+}
 #updates div div:first-child, #updates h5 {
   width: 90%;
   margin-right: 5%;

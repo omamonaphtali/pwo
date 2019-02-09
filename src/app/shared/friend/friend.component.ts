@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
     }`
   ],
   template: `
-  <a href="https://web.facebook.com/PEACEkeny.org/" class="btn btn-primary">Become a Friend</a>`
+  <a href="https://web.facebook.com/PEACEkeny.org/" class="btn btn-primary">Become a Peace Warrior</a>`
 })
 export class FriendComponent implements OnInit {
 
