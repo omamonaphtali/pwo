@@ -1,12 +1,15 @@
 {
-  "name": "pwo",
-  "version": "0.0.0",
+  "name": "peace_warriors _organisation",
+  "version": "2.0.1",
+  "description": "Peace Warriors Organisation is a women-led, non-profit, non-partisan and non-governmental organisation committed to support, position and strengthen women and girls through social, economic and political interventions at all levels of governance resulting to peace as the bigger picture.",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "start-dev": "nodemon ./bin/www",
     "less": "lessc ./public/stylesheets/style.less ./public/stylesheets/style.css"
   },
+  "keywords": ["Peace Warriors Organization", "NGOs in Kenya"],
+  "author": "Jared Omamo <omamonaphtali@gmail.com>",
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
