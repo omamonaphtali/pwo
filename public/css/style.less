@@ -1,0 +1,167 @@
+@primaryColor: #15cbf8;
+@secondaryColor: #c70cc7;
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 50px;
+  padding-top: 10px; 
+  font: 1em Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-weight: bold;
+}
+h2 {
+  color: @secondaryColor;
+}
+h3 {
+  color: @primaryColor;
+  font-weight: 400;
+}
+
+iframe {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-primary {
+  max-width: 15em;
+
+  &:hover {
+    background-color: @primaryColor;
+  }
+
+  a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  flex-direction: column;
+}
+.bg-dark {
+  background-color: @primaryColor!important;
+}
+.navbar-dark .navbar-toggler {
+  background-color: @secondaryColor!important;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  box-shadow: @primaryColor 0 0 5px;
+  padding: 5px;
+
+  &>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .mission-vision section {
+      margin: 1em auto;
+      padding: 0 2em;
+    }
+  }
+}
+
+#objectives {
+  span {
+    font-weight: bold;
+  }
+}
+
+#thematic-areas {
+  background-color: #eee;
+  text-align: center;
+  padding: inherit;
+
+  section {
+    div {
+      margin: 5px 1%;
+      border: #fff solid 2px;
+      background-color: #fff;
+      border-radius: 5px;
+
+      img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    div:last-child {
+      padding: 15px;
+      box-shadow: @primaryColor 0 0 5px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+  }
+}
+
+footer {
+  clear: both;
+}
+
+// contacts page
+#about {
+  margin-top:100px;
+}
+#contacts {
+  display: block;
+}
+
+// big-screen smart-phones
+@media only screen and (min-width: 401px) {
+
+}
+
+// tablets
+@media only screen and (min-width: 669px) {
+  main, #about {margin-top: 50px;}
+  .navbar {flex-direction: row;}
+}
+
+// desktops
+@media only screen and (min-width: 969px) {
+  main {flex-direction: row;}
+  .mission-vision section {width: 60%;}
+  #objectives {
+    div {
+      column-count: 2;
+      column-gap: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  #thematic-areas {
+    background-color: #eee;
+    text-align: center;
+    padding: inherit;
+
+    section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      div {
+        width: 50%;
+      }
+    }
+  }
+
+}
