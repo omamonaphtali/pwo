@@ -1,15 +1,22 @@
 {
-  "name": "peace_warriors _organisation",
+  "name": "peace_warriors_organisation",
   "version": "2.0.1",
   "description": "Peace Warriors Organisation is a women-led, non-profit, non-partisan and non-governmental organisation committed to support, position and strengthen women and girls through social, economic and political interventions at all levels of governance resulting to peace as the bigger picture.",
   "private": true,
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www",
-    "start-dev": "nodemon ./bin/www",
-    "less": "lessc ./public/stylesheets/style.less ./public/stylesheets/style.css"
+    "start": "node app.js",
+    "start-dev": "nodemon app.js"
   },
-  "keywords": ["Peace Warriors Organization", "NGOs in Kenya"],
+  "keywords": [
+    "Peace Warriors Organization",
+    "NGOs in Kenya"
+  ],
   "author": "Jared Omamo <omamonaphtali@gmail.com>",
+  "engines": {
+    "node": "8.11.3",
+    "npm": "6.9.0"
+  },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
@@ -19,5 +26,11 @@
     "less": "^3.9.0",
     "less-middleware": "^3.1.0",
     "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "nodemon": "^1.19.1"
   }
 }
