@@ -24,6 +24,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/gallery', galleryRouter);
+// app.get('*', (req, res, err, msg) => {
+//   res.render('error',
+//     {
+//       title: 'Error',
+//       message: msg,
+//       error: err,
+//     });
+// });
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
