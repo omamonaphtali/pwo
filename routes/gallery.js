@@ -22,4 +22,8 @@ router.get('/chebilat', (req, res) => {
   res.render('gallery/chebilat', { title: 'Chebilat Town Peace Drive | Peace Warriors Organization' });
 });
 
+router.get('/school-greening', (req, res) => {
+  res.render('gallery/greening', { title: 'School Greening Program | Peace Warriors Organization' });
+});
+
 module.exports = router;

@@ -1,9 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
-const less = require('less-middleware');
 
 const indexRouter = require('./routes/index');
 const galleryRouter = require('./routes/gallery');
@@ -15,23 +12,12 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 // Middleware
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(less(path.join(`${__dirname}/public`)));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'src')));
 
 app.use('/', indexRouter);
 app.use('/gallery', galleryRouter);
-// app.get('*', (req, res, err, msg) => {
-//   res.render('error',
-//     {
-//       title: 'Error',
-//       message: msg,
-//       error: err,
-//     });
-// });
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
@@ -49,7 +35,8 @@ app.use((err, req, res) => {
   res.render('error');
 });
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Server running at port: ${port}`);
 });
