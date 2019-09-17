@@ -1,5 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
+const exphbs = require('express-handlebars');
 const path = require('path');
 
 const indexRouter = require('./routes/index');
@@ -9,6 +10,12 @@ const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+app.engine('hbs', exphbs({
+  defaultLayout: 'layout',
+  layoutsDir: path.join(__dirname, 'views/layouts'),
+  partialsDir: path.join(__dirname, 'views/partials'),
+  extname: '.hbs',
+}));
 app.set('view engine', 'hbs');
 
 // Middleware

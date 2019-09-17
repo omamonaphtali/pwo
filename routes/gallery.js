@@ -26,4 +26,8 @@ router.get('/school-greening', (req, res) => {
   res.render('gallery/greening', { title: 'School Greening Program | Peace Warriors Organization' });
 });
 
+router.get('/tree-planting', (req, res) => {
+  res.render('gallery/tree-planting', { title: 'Tree Planting Program | Peace Warriors Organization' });
+});
+
 module.exports = router;
