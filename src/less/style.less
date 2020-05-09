@@ -5,6 +5,7 @@
 }
 body {
   padding: 50px;
+  padding-bottom: 0;
   font: 1em Arial, Helvetica, sans-serif;
   line-height: 1.5;
   background-color: #fff;
@@ -114,6 +115,27 @@ main {
 
 footer {
   clear: both;
+  background-color: @secondaryColor;
+  text-align: center;
+  color: #ffffff;
+
+  .social {
+    .fa {
+      color: #000000;
+      font-size: 2.5em;
+      margin: 0 1em;
+      }
+
+      a:nth-of-type(1):hover {
+        color: #00acee;
+      }
+      a:nth-of-type(2):hover {
+        color: #3b5998;
+      }
+      a:nth-of-type(3):hover {
+        color: #fff;
+    }
+  }
 }
 
 // contacts page
@@ -122,6 +144,11 @@ footer {
 }
 #contacts {
   display: block;
+}
+
+// Gallery page
+.gallery-container {
+  margin: auto;
 }
 
 // big-screen smart-phones

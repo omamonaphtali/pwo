@@ -1,6 +1,7 @@
 const createError = require('http-errors');
 const express = require('express');
 const exphbs = require('express-handlebars');
+const expressLess = require('express-less');
 const path = require('path');
 
 const indexRouter = require('./routes/index');
@@ -21,6 +22,7 @@ app.set('view engine', 'hbs');
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use('/less', expressLess(path.join(__dirname, 'src/less'), { compress: true }));
 app.use(express.static(path.join(__dirname, 'src')));
 
 app.use('/', indexRouter);
