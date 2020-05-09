@@ -1,0 +1,52 @@
+User-agent: Chrome
+Allow: /
+Allow: /about/
+Allow: /gallery/
+Allow: /gallery/mentorship
+Allow: /gallery/kianyaga
+Allow: /gallery/peace
+Allow: /gallery/chebilat
+Allow: /contact/
+
+User-agent: Edge
+Allow: /
+Allow: /about/
+Allow: /gallery/
+Allow: /gallery/mentorship
+Allow: /gallery/kianyaga
+Allow: /gallery/peace
+Allow: /gallery/chebilat
+Allow: /contact/
+
+User-agent: Firefox
+Allow: /
+Allow: /about/
+Allow: /gallery/
+Allow: /gallery/mentorship
+Allow: /gallery/kianyaga
+Allow: /gallery/peace
+Allow: /gallery/chebilat
+Allow: /gallery/school-greening
+Allow: /contact/
+
+User-agent: Safari
+Allow: /
+Allow: /about/
+Allow: /gallery/
+Allow: /gallery/mentorship
+Allow: /gallery/kianyaga
+Allow: /gallery/peace
+Allow: /gallery/chebilat
+Allow: /gallery/school-greening
+Allow: /contact/
+
+User-agent: *
+Allow: /
+Allow: /about/
+Allow: /gallery/
+Allow: /gallery/mentorship
+Allow: /gallery/kianyaga
+Allow: /gallery/peace
+Allow: /gallery/chebilat
+Allow: /gallery/school-greening
+Allow: /contact/
