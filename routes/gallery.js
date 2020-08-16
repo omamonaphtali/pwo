@@ -10,6 +10,10 @@ router.get('/women-in-sports', (req, res) => {
   res.render('gallery/women-in-sports', { title: 'Women in Sports for Peace Building | Peace Warriors Organization' });
 });
 
+router.get('/covid', (req, res) => {
+  res.render('gallery/covid', { title: 'COVID Charity | Peace Warriors Organization' });
+});
+
 router.get('/mentorship', (req, res) => {
   res.render('gallery/mentorship', { title: 'Girls\' Mentorship | Peace Warriors Organization' });
 });
