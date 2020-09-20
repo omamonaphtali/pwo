@@ -14,6 +14,10 @@ router.get('/covid', (req, res) => {
   res.render('gallery/covid', { title: 'COVID Charity | Peace Warriors Organization' });
 });
 
+router.get('/coaching', (req, res) => {
+  res.render('gallery/coaching', { title: 'Professional Coaching | Peace Warriors Organization' });
+});
+
 router.get('/mentorship', (req, res) => {
   res.render('gallery/mentorship', { title: 'Girls\' Mentorship | Peace Warriors Organization' });
 });
