@@ -38,4 +38,8 @@ router.get('/tree-planting', (req, res) => {
   res.render('gallery/tree-planting', { title: 'Tree Planting Program | Peace Warriors Organization' });
 });
 
+router.get('/kiandutu', (req, res) => {
+  res.render('gallery/Kiandutu', { title: 'Kiandutu Clean Up | Peace Warriors Organization' });
+});
+
 module.exports = router;
